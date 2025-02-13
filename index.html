@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link 
+      href="https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&family=Quicksand:wght@300..700&family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css">
+    <title>VP Stock Market Tracker</title>
+</head>
+<body>
+    <!--Header Section-->
+    <header>
+        <div class="container">
+            <div class="logo" aria-label="Website Logo">
+                <span class="white-dot"></span>
+                <b>VP Stock Market Tracker</b>
+                <span class="white-dot"></span>
+            </div>
+        </div>
+    </header>
+
+    <!--Greeting Section-->
+    <section class="container greeting-section">
+        <!--Left Side: Greeting Message + Weather Information-->
+        <div class="left-side">
+            <h2 id="greeting">Hello!</h2>
+            <p id="weather-info">Retrieving weather information...</p>
+        </div>
+
+        <!--Right Side: Local Time Clock-->
+        <div class="right-side">
+            <p>Local Time</p>
+            <div class="local-time">
+                <div class="time-holder">
+                    <span data-time="hours" class="time-number">00</span>
+                    <span class="time-letter">Hours</span>
+                </div>
+                <span class="time-divider">:</span>
+                <div class="time-holder">
+                    <span data-time="minutes" class="time-number">00</span>
+                    <span class="time-letter">Mins</span>
+                </div>
+                <span class="time-divider">:</span>
+                <div class="time-holder">
+                    <span data-time="seconds" class="time-number">00</span>
+                    <span class="time-letter">Secs</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Hero Section-->
+    <section class="hero">
+        <img src="images/background01.png" alt="hero-image">
+    </section>
+
+    <!--Main Area-->
+    <section class="container main-area">
+        <!--Market Group Navigation Bar-->
+        <div class="stock-market-group">
+            <h2 id="nasdaq" class="active-tab">NASDAQ</h2>
+            <h2 id="nyse">NYSE</h2>
+            <h2 id="tse-tyo">TSE/TYO</h2>
+            <h2 id="asx">ASX</h2>
+            <h2 id="borsa-italiana">BORSA ITALIANA</h2>
+        </div>
+
+        <!--Information Bar: Last Update Date/Time + Search Area-->
+        <div class="info-bar">
+            <!--Last Update Date/Time-->
+            <div class="last-updatetime">
+                <h5>Last Update 03/02/2025 19:55 (Italy - Albenga)</h5>
+            </div>
+            
+            <!--Search Area-->
+            <form class="search-area">
+                <input type="text" name="stockName" id="stock-input" placeholder="e.g. AAPL, Apple, ..." required>
+                <button type="submit">Search</button>
+            </form>
+        </div>
+
+        <!--Stock List: Most of this part in generated in JS on page load-->
+        <div class="stock-list">
+            <p id="wait-placeholder">Retrieving live data...</p>
+        </div>
+    </section>
+
+    <!--Footer Section: For now, thsese are just texts-->
+    <footer>
+        <div class="container">
+            <ul>
+                <li class="list-title">Categories</li>
+                <li><a href="#">NASDAQ</a></li>
+                <li><a href="#">TSE/TYO</a></li>
+                <li><a href="#">EURONEXT</a></li>
+                <li><a href="#">ASX</a></li>
+                <li><a href="#">BORSA ITALIANA</a></li>
+            </ul>
+            <ul>
+                <li class="list-title">About Us</li>
+                <li><a href="#">Our Story</a></li>
+                <li><a href="#">Press</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Awards</a></li>
+                <li><a href="#">Stores</a></li>
+            </ul>
+            <ul>
+                <li class="list-title">Social Media</li>
+                <li><a href="#">Facebook</a></li>
+                <li><a href="#">Instagram</a></li>
+                <li><a href="#">Twitter</a></li>
+                <li><a href="#">Youtube</a></li>
+            </ul>
+            <ul>
+                <li class="list-title">Customer Service</li>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">Terms & Conditions</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <!--Copyright Section-->
+    <section class="copyright">
+        <p>&reg; All Rights Reserved</p>
+    </section>
+
+    <script src="main.js" defer></script>
+</body>
+</html>
