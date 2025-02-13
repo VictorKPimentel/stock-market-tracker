@@ -10,7 +10,6 @@ A simple web application that tracks stock market data using a financial API. Bu
 
 ✅ Display real-time stock prices and market data
 
-✅ Interactive charts for price trends
 
 ✅ Mobile-friendly design
 
