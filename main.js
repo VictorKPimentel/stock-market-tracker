@@ -17,7 +17,7 @@ function greetingHandler() {
 
 // CONST variables required for the openWeatherMap API
 const weatherAPIURL = `https://api.openweathermap.org/data/2.5/weather?lat={lat}&lon={lon}&appid={API key}&units=metric`;
-const weatherAPIKey = "280a4b14c73877bdef04276f0011a03c";
+const weatherAPIKey = "XXXXXXXXXXX"; // Enter the API Key
 
 // Weather Text
 function weatherHandler() {
@@ -80,7 +80,7 @@ function lastUpdateHandler() {
 
 
 const stockAPIURL = "https://api.twelvedata.com/quote";
-const stockAPIKey = "1e03283c7212473b8ffc6a9084479bf9";
+const stockAPIKey = "XXXXXXXXXXX"; // Enter the API Key
 
 const stockList = [ // Ideally we would like to fetch the symbols from the API too but it is hardcoded here since the Tweve Data API free subscription has limits.
                     // Only the prices and changes are going to be fetched from the API.
